@@ -1,2 +1,5 @@
 # baseMap-mapBox-
-making a base map using mapbox
+For this project I decided to do a more outdoors oriented map. I chose colors that represent mountains, foliage, and the sunset. To make it an outdoors map, I removed most of the manmade features from the map, and worked to make the natural elements more noticeable. I gave certain elements more colors, and for the large elements like natural parks, I made them more visible at greater distances. I also gave bolder colors to things like hillsides and contour lines to make the shape of the land really pop out. I also removed several boundaries and labels of manmade things to emphasize the terrain. However there are some major roads still left for convenience.
+
+--Notes--
+I couldn't get the page to work on leaflet for some reason. It would load in everything, but I would get errors in the javascript when I ran it. I was seeing like 650 errors every time complaining about the style file and not finding what it wanted. I just used an alternate index file instead so that the map can be seen on the site. 

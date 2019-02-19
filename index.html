@@ -1,48 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset='utf-8' />
   <title>Backpacking Map - Owen Markley</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <style>
-          html {
-              /*full screen the map*/
-              height: 100%;
-          }
-          body {
-              height: 100%;
-              padding: 0;
-              margin: 0;
-          }
-          #map {
-              width: 100%;
-              height: 100%;
-          }
-      </style>
-
-      <!-- Stylesheet -->
-      <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.40.1/mapbox-gl.css" rel='stylesheet'/>
-      <!-- Javascript Libraries -->
-      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
-      <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
-      <!-- mapbox gl js -->
-      <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.40.1/mapbox-gl.js"></script>
-      <!-- leaflet mapbox js -->
-      <script src="https://rawgit.com/mapbox/mapbox-gl-leaflet/master/leaflet-mapbox-gl.js"></script>
-
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+  <style>
+    body { margin:0; padding:0; }
+    #map { position:absolute; top:0; bottom:0; width:100%; }
+  </style>
 </head>
 <body>
 
   <div id='map'></div>
   <script>
-    var map = L.map('map').setView([44.565095, -123.278298], 15);
-
-    mapbox_token = 'pk.eyJ1IjoibWFya2xleW8iLCJhIjoiY2pycjBhem51MDJ6eTQ0bXlmZnlta2pkdCJ9.zNZddUj-aBESY3ogNERWIg';
-    var gl = L.mapboxGL({
-      accessToken: mapbox_token,
-      style: 'assets/style.json',
-      attribution: 'Created By <a href="https://github.com/MarkleyO/">Owen Markley</a> based on the <a href="assets/license.txt">Mapbox basic style</a>'
-    }).addTo(map);
+    mapboxgl.accessToken = 'pk.eyJ1IjoibWFya2xleW8iLCJhIjoiY2pycjBhem51MDJ6eTQ0bXlmZnlta2pkdCJ9.zNZddUj-aBESY3ogNERWIg';
+    const map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/markleyo/cjs12hvvu0bop1fp44aoovsav',
+      center: [-81.183127, 29.143890],
+      zoom: 8.3
+    });
   </script>
 
 </body>

@@ -20,8 +20,8 @@
             "ios": "4.6.0"
         }
     },
-    "center": [-106.44543207934049, 39.004114332573266],
-    "zoom": 11.96887369579658,
+    "center": [-81.18312660864285, 29.14388977703038],
+    "zoom": 8.293229741717472,
     "bearing": 0,
     "pitch": 0,
     "sources": {
@@ -5892,8 +5892,8 @@
     ],
     "created": "2019-02-12T01:08:03.745Z",
     "id": "cjs12hvvu0bop1fp44aoovsav",
-    "modified": "2019-02-19T06:53:34.640Z",
+    "modified": "2019-02-19T07:34:33.233Z",
     "owner": "markleyo",
-    "visibility": "private",
+    "visibility": "public",
     "draft": false
 }
